@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Menu Inicial.unity
+    guid: 2b4656cb46691ae48a91067bdf89a4cd
+  - enabled: 1
+    path: Assets/Scenes/Selector Niveles.unity
+    guid: 9ae975db950ee4e4abfd95f9ed265d86
+  - enabled: 1
+    path: Assets/Scenes/Mundo 3.unity
+    guid: c46e6992f633a054ca61164b5af14af0
+  - enabled: 1
+    path: Assets/Scenes/Mundo 4.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Batalla.unity
+    guid: cf74644d7a0deb64e9d7b5997e6aaffc
   m_configObjects: {}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovimientoJugador : MonoBehaviour
 {
@@ -50,6 +51,14 @@ public class MovimientoJugador : MonoBehaviour
         animator.SetBool("EnSuelo",enSuelo);
         Mover(movHorizontal * Time.fixedDeltaTime, salto);
         salto = false;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemigo"))
+        {
+            SceneManager.LoadScene(4);
+        }
     }
 
     private void Mover(float mover, bool saltar)

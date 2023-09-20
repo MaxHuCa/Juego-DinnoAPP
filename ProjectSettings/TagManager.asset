@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - PuntoFinal
+  - Enemigo
   layers:
   - Default
   - TransparentFX

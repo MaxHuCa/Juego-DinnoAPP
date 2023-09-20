@@ -8,7 +8,7 @@ public class GeneradorNivel : MonoBehaviour
     public float distanciaMin;
     public Transform puntoFinal;
     public float cantidadInicial;
-    public Transform jugador;
+    private Transform jugador;
     
     // Start is called before the first frame update
     void Start()
@@ -26,9 +26,15 @@ public class GeneradorNivel : MonoBehaviour
         if (Vector2.Distance(jugador.position,puntoFinal.position)<distanciaMin)
         {
             GenerarPartes();
+            Destroy(partesNivel, 120f);
         }
     }
-    
+
+    private void Destroy(GameObject[] partesNivel, float v)
+    {
+        throw new System.NotImplementedException();
+    }
+
     private void GenerarPartes()
     {
         int numRandon = Random.Range(0,partesNivel.Length);
